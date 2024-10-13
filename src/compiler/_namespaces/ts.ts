@@ -72,6 +72,7 @@ export * from "../tsbuild.js";
 export * from "../tsbuildPublic.js";
 export * from "../executeCommandLine.js";
 export * from "../expressionToTypeNode.js";
+export * from "../extensions.js";
 import * as moduleSpecifiers from "./ts.moduleSpecifiers.js";
 export { moduleSpecifiers };
 import * as performance from "./ts.performance.js";

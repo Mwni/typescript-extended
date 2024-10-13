@@ -487,6 +487,9 @@ export const enum SyntaxKind {
     LastJSDocTagNode = JSDocImportTag,
     /** @internal */ FirstContextualKeyword = AbstractKeyword,
     /** @internal */ LastContextualKeyword = OfKeyword,
+
+    // Extensions
+    Extension = 255,
 }
 
 export type TriviaSyntaxKind =
@@ -10567,3 +10570,7 @@ export interface SyntacticNodeBuilder {
 
 /** @internal */
 export type IntroducesNewScopeNode = SignatureDeclaration | JSDocSignature | MappedTypeNode;
+
+export interface ExtensionNode extends Node{
+    readonly kind: SyntaxKind.Extension;
+}
